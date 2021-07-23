@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<!--
+        
+    -->
+<!--
+        source-code:https://jsfiddle.net/twuxhsag/
+    -->
+<head>
+    <title>Timeline of Infostellar</title>
+    <style>
+#container {
+  min-width: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+    </style>
+    </head>
+ <body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/timeline.js"></script>
+    <div id="container"></div>
+<script>
+    Highcharts.chart('container', {
+  chart: {
+    zoomType: 'x',
+    type: 'timeline'
+  },
+  xAxis: {
+    type: 'datetime',
+    visible: false
+  },
+  yAxis: {
+    gridLineWidth: 1,
+    title: null,
+    labels: {
+      enabled: false
+    }
+  },
+  legend: {
+    enabled: false
+  },
+  title: {
+    text: 'Timeline of Infostellar'
+  },
+  subtitle: {
+    text: 'Info source: <a href="https://infostellar.net/news">https://infostellar.net/news</a>'
+  },
+  tooltip: {
+    style: {
+      width: 300
+    }
+  },
+  series: [{
+    dataLabels: {
+      allowOverlap: false,
+      format: '<span style="color:{point.color}">● </span><span style="font-weight: bold;" > ' +
+        '{point.x:%d %b %Y}</span><br/>{point.label}'
+    },
+    marker: {
+      symbol: 'circle'
+    },
+    data: [{
+      x: Date.UTC(2021, 05, 30),
+    //   name: 'First dogs in space',
+    //   label: 'First dogs in space',
+      description: "Infostellar to Integrate AWS Ground Station into StellarStation mission control software."
+    }, {
+      x: Date.UTC(2021, 04, 17),
+    //   name: 'First artificial satellite',
+    //   label: 'First artificial satellite',
+      description: "Infostellar and C-CORE begin commercial satellite downlink services from Happy Valley-Goose Bay Station."
+    }, {
+      x: Date.UTC(2021, 01, 01),
+    //   name: 'First artificial satellite to reach the Moon',
+    //   label: 'First artificial satellite to reach the Moon',
+      description: "Infostellar and Arctic Space Technologies execute declaration of intent for hosting of a 7.3 m Infostellar ground station in northern Sweden."
+    }, {
+      x: Date.UTC(2021, 00, 18),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar’s StellarStation hits X-Band service milestone with successful test campaign in Canada."
+    }, {
+      x: Date.UTC(2021, 00, 11),
+    //   name: 'First multinational space station',
+    //   label: 'First multinational space station',
+      description: "Infostellar introduces its new Chief Technology Officer."
+    },{
+      x: Date.UTC(2020, 10, 16),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Viasat, Infostellar sign Global Real-Time Earth Agreement"
+    },{
+      x: Date.UTC(2020, 08, 29),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar adds industry leader to executive staff"
+    },{
+      x: Date.UTC(2020, 06, 18),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar’s work from home strategy in the COVID-19 era"
+    },{
+      x: Date.UTC(2020, 03, 30),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar raises a total of $3.5m with lead investor Airbus Ventures, Sony Innovation Fund, and new investors Daiwa Energy & Infrastructure, Mitsubishi UFJ Capital, and Mitsubishi UFJ Lease & Finance"
+    },{
+      x: Date.UTC(2020, 03, 06),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Notice: Infostellar moves to a new office in Gotanda."
+    },{
+      x: Date.UTC(2020, 01, 06),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Azercosmos and Infostellar to enter into Ground Station Partnership"
+    },{
+      x: Date.UTC(2019, 11, 17),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Capricorn Space and Infostellar cooperate to enable On Demand ground segment services"
+    },{
+      x: Date.UTC(2019, 06, 31),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Simplify your search for ground stations with our new planning tool"
+    },{
+      x: Date.UTC(2019, 04, 29),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar opens a UK-based dedicated Regulatory Affairs division, headed by Andrew Fry, ex-OneWeb Director of Government Affairs"
+    },{
+      x: Date.UTC(2019, 03, 22),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar partners with leading ground systems manufacturers to simplify StellarStation integration"
+    },{
+      x: Date.UTC(2019, 00, 07),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "The Satellite Applications Catapult partners with Infostellar to provide improved ground station access"
+    },{
+      x: Date.UTC(2018, 11, 03),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Notice: Infostellar office relocated to Gotanda"
+    },{
+      x: Date.UTC(2018, 09, 01),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "StellarStation commercial service operational for UHF TT&C"
+    },{
+      x: Date.UTC(2018, 06, 31),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "StellarStation to be pre-integrated into mission control software solutions from Bright Ascension, GMV, Spaceit"
+    },{
+      x: Date.UTC(2018, 05, 26),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar selected as a J-Startup company"
+    },{
+      x: Date.UTC(2018, 05, 13),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Partnership formed with Kyushu Institute of Technology for continued testing of StellarStation"
+    },{
+      x: Date.UTC(2018, 01, 13),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Announcing StellarStation Amateur, a LEOP support service for viewing amateur UHF band telemetry and tracking"
+    },{
+      x: Date.UTC(2017, 10, 02),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Onboarding begins for StellarStation closed beta, testing to start in Q1 2018"
+    },{
+      x: Date.UTC(2017, 08, 13),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar closes Series A financing round with $7.3m for satellite antenna sharing platform, with lead investor Airbus Ventures"
+    },{
+      x: Date.UTC(2017, 05, 15),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Infostellar Receives $474K Grant in MIC Information and Communications Technology Innovation Challenge Program"
+    },{
+      x: Date.UTC(2016, 09, 06),
+    //   name: 'First human spaceflight',
+    //   label: 'First human spaceflight',
+      description: "Tokyo startup Infostellar receives seed investment total of $550K for development of Satellite Antenna Sharing Platform"
+    },]
+  }]
+});
+</script>
+</body>
+</html>
